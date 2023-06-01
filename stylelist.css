@@ -1,0 +1,158 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 80px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-items li {
+  margin-right: 20px;
+}
+
+.navbar-items li:last-child {
+  margin-right: 0;
+  margin-left: auto; /* Align the last item to the right */
+}
+
+.navbar-items li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  width: 200px;
+  color: #333;
+  transition: width 0.3s ease;
+}
+
+.navbar-search input[type="text"]::placeholder {
+  color: #999;
+}
+
+.navbar-search button {
+  padding: 10px 15px;
+  background-color: #FF1580;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-search input[type="text"]:focus {
+  width: 300px;
+  outline: none;
+}
+
+.navbar-search button:hover {
+  background-color: #bc0e5c;
+}
+
+h3 {
+    padding: 2%;
+}
+
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 2%;
+  padding-left: 8%;
+  box-sizing: border-box;
+}
+
+.box {
+  width: calc(25% - 20px); /* Adjust the width and gap between cards as desired */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.image-container {
+  width: 230px;
+  height: 130px;
+  padding: 10%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #B7D7E8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+}
+
+.box-text {
+    display: block;
+    text-align: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 5px;
+  background-color: #FF1580;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none !important;
+}
